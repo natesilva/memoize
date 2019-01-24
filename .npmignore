@@ -1,0 +1,14 @@
+**/*.test.*
+*.sublime-*
+*.tgz
+.editorconfig
+.nyc_output
+.prettier*
+.vscode
+ava.config.js
+coverage
+src
+test
+test.*
+tsconfig.*
+tslint.*

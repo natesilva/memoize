@@ -1,0 +1,53 @@
+{
+  "name": "@reallyuseful/memoize",
+  "version": "1.0.0",
+  "description": "A memoize decorator for use with JavaScript and TypeScript classes",
+  "main": "build/src/index.js",
+  "types": "build/src/index.d.ts",
+  "scripts": {
+    "clean": "del-cli build",
+    "build": "tsc",
+    "prettier": "prettier --write \"{src,test}/**/*.?(ts|json)\"",
+    "prepare": "npm run clean && npm run build",
+    "test": "ava",
+    "test:watch": "ava -w",
+    "coverage": "nyc --reporter lcov --reporter text --extension .ts ava"
+  },
+  "keywords": [
+    "decorator",
+    "memoize"
+  ],
+  "author": "Nate Silva <nate@natesilva.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "repository": "natesilva/memoize",
+  "devDependencies": {
+    "@types/node": "^10.11.4",
+    "ava": "^1.1.0",
+    "del-cli": "^1.1.0",
+    "nyc": "^13.1.0",
+    "prettier": "^1.14.3",
+    "testdouble": "^3.9.3",
+    "ts-node": "^8.0.1",
+    "tslint": "^5.12.1",
+    "typescript": "^3.1.1"
+  },
+  "dependencies": {
+    "p-is-promise": "^2.0.0"
+  },
+  "ava": {
+    "compileEnhancements": false,
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register/transpile-only"
+    ]
+  },
+  "prettier": {
+    "printWidth": 90,
+    "singleQuote": true
+  }
+}

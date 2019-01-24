@@ -1,0 +1,18 @@
+{
+  "rules": {
+    "no-unused-expression": true,
+    "no-duplicate-variable": true,
+    "curly": true,
+    "class-name": true,
+    "semicolon": true,
+    "triple-equals": true,
+    "quotemark": [true, "single", "avoid-escape"],
+    "linebreak-style": [true, "LF"],
+    "eofline": true,
+    "no-conditional-assignment": true,
+    "use-isnan": true,
+    "indent": [true, "spaces"],
+    "arrow-return-shorthand": [true],
+    "no-trailing-whitespace": true
+  }
+}

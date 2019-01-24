@@ -1,0 +1,9 @@
+**/test.ts
+*.sublime-workspace
+*.tgz
+.nyc_output
+.vscode
+build
+coverage
+node_modules
+npm-debug.log
